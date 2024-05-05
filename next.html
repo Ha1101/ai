@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Gym Trainer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Your CSS styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .wow:first-child {
+            visibility: hidden;
+        }
+
+        /* Styles for .about section */
+        .about {
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center; /* Center align items horizontally */
+            align-items: flex-start; /* Align items to the top */
+            flex-wrap: wrap; /* Allow items to wrap */
+        }
+
+        .box {
+            width: calc(50% - 20px); /* Adjust width for larger screens */
+            background-color: red;
+            padding: 30px;
+            margin: 10px; /* Add margin between boxes */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+        }
+
+        .img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            padding-left: 20px;
+        }
+
+        .text h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .text select {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Adjust the layout for smaller screens */
+        @media (max-width: 768px) {
+            .box {
+                width: 100%; /* Take full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Start About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content">
+                <div class="box" data-wow-delay="0.2s">
+                    <div class="inner">
+                        <div class="img">
+                            <img src="images/exe1.jpeg" alt="about" />
+                        </div>
+                        <div class="text">
+                            <h4>LET's GO !</h4>
+                            <select onchange="runExercise(this.value);">
+                                <option value="">Choose EXERCISE...</option>
+                                <option value="exe1.Py">EXERCISE 1</option>
+                                <option value="page2">EXERCISE 2</option>
+                                <option value="page3">EXERCISE 3</option>
+                                <option value="page4">EXERCISE 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        function runExercise(exercise) {
+            if (exercise) {
+                // Redirect to the server endpoint to execute the Python code
+                window.location.href = "/run_code/" + exercise;
+            }
+        }
+    </script>
+    <!-- End About -->
+</body>
+</html>

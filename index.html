@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Gym Trainer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .wow:first-child {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Start Header  -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="">Fat To Fit <span>Club</span></a>
+        </div>
+        <a href="javascript:void(0)" class="ham-burger">
+            <span></span>
+            <span></span>
+        </a>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- End Header  -->
+
+<!-- Start Home -->
+<section class="home wow flash" id="home">
+    <div class="container">
+        <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
+        <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
+    </div>
+    <!-- go down -->
+    <a href="#about" class="go-down">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+    <!-- go down -->
+</section>
+<!-- End Home -->
+
+<!-- Start About -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="content">
+            <div class="box wow bounceInUp" data-wow-delay="0.2s">
+                <div class="inner">
+                    <div class="img">
+                        <img src="{{ url_for('static', filename='images/about2.png') }}" alt="about" />
+                    </div>
+                    <div class="text">
+                        <h4>Get Perfect Diet</h4>
+                        <p>"Elevate your nutrition, elevate your life. Embrace the power of wholesome, nutrient-rich foods to fuel your body, nourish your mind, and unleash your full potential. Your diet isn't just about what you eat; it's a reflection of your commitment to living your healthiest, happiest life. With each meal, you have the opportunity to nourish yourself from the inside out, laying the foundation for vitality, strength, and longevity."                          </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box wow bounceInUp" data-wow-delay="0.4s">
+                <div class="inner">
+                    <div class="img">
+                        <img src="{{ url_for('static', filename='images/about3.jpg') }}" alt="about" />
+                    </div>
+                    <div class="text">
+                        <h4>Build Perfect Body</h4>
+                        <p>"Embark on a journey of self-transformation, sculpting not just your body, but your entire being.cultivating strength, resilience, and unwavering dedication. Every drop of sweat, every rep, every moment of pushing past your limits brings you closer to the masterpiece you're creating. Embrace the process, trust the journey, and watch as your body evolves into a testament of your dedication, discipline, and determination."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About -->
+
+<!-- Start Service -->
+<section class="service" id="service">
+    <div class="container">
+        <div class="content">
+            <div class="text box wow slideInLeft">
+                <h2>Services</h2>
+                <p>Experience the future of fitness with our cutting-edge AI Gym Partner services. From real-time form correction to personalized workout plans, progress tracking, and virtual coaching, our AI-powered platform revolutionizes your gym experience. With advanced technology and expert guidance at your fingertips, achieving your fitness goals has never been easier or more rewarding. Elevate your workouts and unleash your full potential with our comprehensive suite of services tailored just for you.</p>
+            </div>
+            <div class="accordian box wow slideInRight">
+                <div class="accordian-container active">
+                    <div class="head">
+                        <h4>Form Correction</h4>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                    <div class="body">
+                        <p>The AI gym partner can analyze your exercise movements in real-time using computer vision technology. It can provide instant feedback on your form, helping you maintain proper posture and technique to prevent injuries and maximize the effectiveness of your workout.</p>
+                    </div>
+                </div>
+                <div class="accordian-container">
+                    <div class="head">
+                        <h4>Workout Customization</h4>
+                        <span class="fa fa-angle-up"></span>
+                    </div>
+                    <div class="body">
+                        <p>Based on your fitness goals, performance, and preferences, the AI gym partner can create personalized workout plans for you. It can adjust the intensity, duration, and type of exercises to ensure you're getting the most out of your training sessions.</p>
+                    </div>
+                </div>
+                <div class="accordian-container">
+                    <div class="head">
+                        <h4>Progress Tracking</h4>
+                        <span class="fa fa-angle-up"></span>
+                    </div>
+                    <div class="body">
+                        <p>The AI gym partner can track your progress over time, monitoring key metrics such as strength gains, endurance levels, and body composition changes. It can provide insights into your improvements and areas for further development, motivating you to stay consistent with your fitness regimen.</p>
+                    </div>
+                </div>
+                <div class="accordian-container">
+                    <div class="head">
+                        <h4>Virtual Coaching</h4>
+                        <span class="fa fa-angle-up"></span>
+                    </div>
+                    <div class="body">
+                        <p>Through interactive voice or text-based communication, the AI gym partner can act as a virtual coach, offering guidance, encouragement, and motivational support during your workouts. It can answer your questions, suggest modifications, and keep you accountable to your fitness goals, providing a personalized training experience whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Service -->
+
+<!-- Start Today -->
+<section class="start-today">
+    <div class="container">
+        <div class="content">
+            <div class="box text wow slideInLeft">
+                <h2>Start Your Training Today</h2>
+                <p>Hey Myself ASHHHWA</p>
+                <span style="font-size: 5em;">🏋️</span>
+                <a href="next.html"> START Now  </a>
+            </div>
+            <div class="box img wow slideInRight">
+                <img src="{{ url_for('static', filename='images/gallery4.webp') }}" alt="start today" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Start Today -->
+
+<!-- Start Gallery -->
+<section class="gallery" id="gallery">
+    <h2>Workout Gallery</h2>
+    <div class="content">
+        <div class="box wow slideInLeft">
+            <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="gallery" />
+        </div>
+        <div class="box wow slideInRight">
+            <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="gallery" />
+        </div>
+        <div class="box wow slideInLeft">
+            <img src="{{ url_for('static', filename='images/gallery3.jpg') }}" alt="gallery" />
+        </div>
+        <div class="box wow slideInRight">
+            <img src="{{ url_for('static', filename='images/gallery4.jpg') }}" alt="gallery" />
+        </div>
+    </div>
+</section>
+<!-- End Gallery -->
+
+<!-- Start Contact -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="content">
+            <div class="box form wow slideInLeft">
+                <form>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Enter Mobile">
+                    <textarea placeholder="Enter Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="box text wow slideInRight">
+                <h2>Get Connected with Us</h2>
+                <p class="title-p">
+                    🏋️‍♂️ Stay connected with us! 🏋️‍♀️ Get the latest fitness updates, tips, and AI-driven insights right to your inbox. Join our community for exclusive content and personalized recommendations. Let's crush those goals together! 💪 #FitnessGoals #AI #GymLife.</p>
+                <div class="info">
+                    <ul>
+                        <li><span class="fa fa-map-marker"></span> RCPIT , Shirpur</li>
+                        <li><span class="fa fa-phone"></span> 91 9999999999</li>
+                        <li><span class="fa fa-envelope"></span> info@gym.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href=""><span class="fa fa-facebook"></span></a>
+                    <a href=""><span class="fa fa-linkedin"></span></a>
+                    <a href=""><span class="fa fa-skype"></span></a>
+                    <a href=""><span class="fa fa-youtube-play"></span></a>
+                </div>
+
+                <div class="copy">
+                    Made By &copy; Harshal Gaikwad AND Team
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact -->
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".ham-burger, .nav ul li a").click(function(){
+
+            $(".nav").toggleClass("open")
+
+            $(".ham-burger").toggleClass("active");
+        })
+        $(".accordian-container").click(function(){
+            $(".accordian-container").children(".body").slideUp();
+            $(".accordian-container").removeClass("active")
+            $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+            $(this).children(".body").slideDown();
+            $(this).addClass("active")
+            $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+        })
+
+        $(".nav ul li a, .go-down").click(function(event){
+            if(this.hash !== ""){
+
+                event.preventDefault();
+
+                var hash=this.hash; 
+
+                $('html,body').animate({
+                    scrollTop:$(hash).offset().top
+                },800 , function(){
+                    window.location.hash=hash;
+                });
+
+                // add active class in navigation
+                $(".nav ul li a").removeClass("active")
+                $(this).addClass("active")
+            }
+        })
+    })
+
+</script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+</script>
+</body>
+</html>
